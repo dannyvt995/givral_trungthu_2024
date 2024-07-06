@@ -1,5 +1,6 @@
 html,
 body {
+ 
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -9,8 +10,40 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --padding_container : 2rem;
+  --red_primary : #d92026;
+  --white_primary: #ffffff;
+  --gray_primary: gray;
+
+
+}
+ul {
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4 {
+  margin:0;
+  padding:0;
+  line-height: 170%;
+}
+p {
+}
+h1 {
+  font-size:4rem;
+}
+h2 {
+  font-size:3vw;
+}
+h3 {
+  font-size:2rem;
 }

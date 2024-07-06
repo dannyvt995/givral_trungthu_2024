@@ -1,0 +1,13 @@
+.button_contact {
+    background:var(--white_primary);
+    padding: .5rem 1rem;
+    color:var(--red_primary);
+    border: 1px solid var(--gray_primary);
+    transition: 200ms ;
+}
+.button_contact:hover {
+    transition: 200ms ;
+    background:var(--red_primary);
+    border: 1px solid var(--white_primary);
+    color:var(--white_primary);
+}

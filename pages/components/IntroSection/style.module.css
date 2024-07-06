@@ -1,0 +1,23 @@
+.intro_section {
+    position:relative;
+    width:100%;
+    height:fit-content;
+    
+}
+
+.intro_left {
+    position:relative;
+    width:50%;
+}
+.intro_right {
+    position:relative;
+    width:50%;
+    overflow:hidden;
+}
+.intro_full {
+    position:relative;
+    width:100%;
+    height:auto;
+  
+   
+}

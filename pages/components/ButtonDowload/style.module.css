@@ -1,0 +1,18 @@
+.group_button_dowload{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.tittle_button {
+    text-align:center;
+
+    color:var(--red_primary);
+    font-weight:bold;
+    font-size:1rem;
+}
+.button_dowload {
+    width:200px;
+    position:relative;
+}

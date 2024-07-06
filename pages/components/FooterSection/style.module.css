@@ -1,0 +1,37 @@
+.footer {
+    height:50vh;
+    background: var(--red_primary);
+    padding:5rem 0 0 0;
+}
+.footer * {
+    color:var(--white_primary);
+}
+.group_info {
+    display:flex;
+    flex-direction:column;
+}
+
+.info_footer {
+    width:40%;
+}
+.menu_footer {
+    width:20%;
+}
+.more_footer {
+    width:20%;
+}
+a.hover_underline:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 1024px) {
+    .footer {
+        height: fit-content !important;
+    }
+    .info_footer,.menu_footer,.more_footer {
+        width:100% !important;
+    }
+    .rowItem {
+        flex-wrap:wrap !important;
+    }
+}

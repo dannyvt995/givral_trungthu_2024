@@ -1,0 +1,71 @@
+.flex {
+    display:flex;
+}
+.flex_column {
+    flex-direction: column;
+}
+.flex_row {
+    flex-direction: row;
+}
+.flex_space_around {
+    justify-content: space-around;
+}
+.flex_space_between {
+    justify-content: space-between;
+}
+.flex_space_evenly {
+    justify-content: space-evenly;
+}
+.container {
+    max-width:86%;
+    height:auto;
+    position:relative;
+    margin:0 auto;
+    
+}
+.margin_each_section {
+    margin: 5rem auto !important;
+}
+.react-tabs {
+    /* display: flex; */
+   
+}
+.react-tabs__tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: fit-content;
+    
+  
+  }
+  .react-tabs__tab {
+    border-bottom: auto !important;
+    border-right: none;
+
+    font-size:1.2rem;
+    color: var(--red_primary);
+    transition:200ms!important;
+
+  
+  }
+  .react-tabs__tab-list {
+    margin: 0 auto !important;
+  }
+.react-tabs__tab--selected {
+    background: var(--red_primary)!important;
+    color: var(--white_primary) !important;
+    transition:200ms;
+}
+/* tittle_component */
+.tittle_component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .tittle_component > h2 {
+    color:var(--red_primary);
+  }
+  .tittle_component > p {
+    text-align:center;
+  }

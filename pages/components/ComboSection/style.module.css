@@ -1,0 +1,24 @@
+.item {
+    width:40%;
+    position:relative;
+    padding: 1rem;
+}
+
+.image {
+    height:40vh;
+    overflow:hidden;
+}
+.button_contact {
+    background:var(--red_primary);
+    padding: .5rem 1rem;
+    color:var(--white_primary);
+}
+
+@media(max-width: 1024px) {
+    .item {
+        width:100%;
+    }
+    .rowItem {
+        flex-wrap:wrap !important;
+    }
+}

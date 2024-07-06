@@ -1,0 +1,130 @@
+.widget_section {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:100vh;
+   
+    display:flex;
+    pointer-events: none;
+    z-index:99;
+}
+.list_button {
+    position:absolute;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height:50px;
+    background:var(--red_primary);
+}
+.button:hover {
+    text-decoration: underline;
+
+}
+.button {
+    display:flex;
+    align-items: center;
+    padding: 0 1rem ;
+    color: var(--white_primary);
+}
+.detail {
+   
+    margin-left:1rem;
+}
+.icon {
+    position:relative;
+    width:20px;
+}
+
+
+
+.button_scrollToTop {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right:var(--padding_container);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red_primary);
+    color: var(--white_primary);
+    border: 1px solid var(--white_primary);
+ 
+}
+.call {
+    bottom: 25px;
+}
+.zalo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:bold;
+    bottom: calc(25px * 4);
+}
+.call,.zalo {
+    position: absolute;
+    left: var(--padding_container);
+    width: 60px;
+    height: 60px;
+    background: var(--red_primary);
+    color: var(--white_primary);
+    border: 1px solid var(--white_primary);
+    border-radius:50%;
+}
+.call_icon {
+    width:30px;
+    position:absolute;
+}
+.call > svg {
+    width:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.call::before,
+.zalo::before {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--red_primary);
+    width: calc(100% );
+    height: calc(100%);
+    border-radius: 50%;
+    animation: pulse 1s linear infinite
+}
+
+.call::after,
+.zalo::after {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--red_primary);
+    width: calc(100% );
+    height: calc(100% );
+    border-radius: 50%;
+    animation: pulse 1s linear infinite;
+    animation-delay: 0.3s
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0
+    }
+}
+
+@media(max-width:568px) {
+    .list_button {
+        display:none!important;
+    }
+}
