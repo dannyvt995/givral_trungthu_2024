@@ -1,5 +1,5 @@
 .item {
-    width:40%;
+    width:50%;
     position:relative;
     padding: 1rem;
 }
@@ -11,9 +11,13 @@
 .button_contact {
     background:var(--red_primary);
     padding: .5rem 1rem;
+    display: block;
+    width: fit-content;
     color:var(--white_primary);
 }
-
+.item > p {
+  /*   max-width:72%; */
+}
 @media(max-width: 1024px) {
     .item {
         width:100%;

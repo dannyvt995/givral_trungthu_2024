@@ -5,7 +5,7 @@ import ButtonCall from '../ButtonCall'
 
 export default function ComboSection() {
     return (
-        <section className={`${s.combo_section} margin_each_section`}>
+        <section className={`${s.combo_section} margin_each_section`} id="combo_section">
           
             <div className='container'>
             <div className='tittle_component'>
@@ -47,7 +47,7 @@ export default function ComboSection() {
                             </div>
                             <h3 className={s.name}>Hộp 6 bánh</h3>
                             <span className={s.tag}>6 Bánh (150gr / 200gr / 250gr) + 1 Hộp trà 10gr</span>
-                            <span className={s.note}>* Phụ thu hộp: 50.000 VND</span>
+                            <div className={s.note}>* Phụ thu hộp: 50.000 VND</div>
                             <p>Như bức họa sắc màu gửi gắm bao tình thân, chiếc hộp 6 bánh tràn đầy sắc màu hoa văn thổ cầm của Givral
                                 thay lời chúc Gần Kết - Yêu Thương cho một Tết Trung thu đắm ấm sum vầy. Những trái tim nhỏ xinh lung lĩnh
                                 đắn hiện bên khung cửa với kỹ thuật in ấn nh tế, hộp 6 bánh là lựa chọn trang trọng không thể bỏ qua.</p>
@@ -59,7 +59,7 @@ export default function ComboSection() {
                             </div>
                             <h3 className={s.name}>Hộp đặc biệt</h3>
                             <span className={s.tag}>4 Bánh + 1 Hộp trà 50gr</span>
-                            <span className={s.note}>* Phụ thu hộp: 350.000 VND</span>
+                            <div className={s.note}>* Phụ thu hộp: 350.000 VND</div>
                             <p>Hộp bánh Trung thu đặc biệt được chạm khắc tinh xảo, cùng với sắo màu đỏ sang trọng tạo điểm nhấn nổi bật,
                                 một món quả cách điệu mang thông điệp Trung thu Như Ý cho tất cả mọi người, mọi nhà khắp nơi nơi.</p>
                                <ButtonCall/>

@@ -24,6 +24,15 @@ a.hover_underline:hover {
     text-decoration: underline;
 }
 
+.info_footer_h3_lineBot {
+    content:"";
+    position:relative;
+    display: block;
+    width:100px;
+    height:2px;
+    background:var(--white_primary);
+    margin-bottom:1rem;
+}
 @media(max-width: 1024px) {
     .footer {
         height: fit-content !important;

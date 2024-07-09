@@ -2,8 +2,14 @@ import React from 'react'
 import s from './style.module.css'
 import Image from 'next/image'
 import IconSVG from '../IconSVG'
+import { useLenisContext } from '../../contexts/LenisContext';
 
 export default function WidgetSection() {
+  const lenis = useLenisContext();
+
+  function scrollToTop() {
+    if (lenis) lenis.scrollTo("#hero_section");
+  }
   return (
     <section className={s.widget_section}>
         <div className={s.list_button}>
@@ -14,7 +20,7 @@ export default function WidgetSection() {
                 <p className={s.detail}>Hotline: 093.528.9747</p>
             </a>
         </div>
-        <a className={s.button_scrollToTop}>
+        <a className={s.button_scrollToTop} onClick={scrollToTop}>
           ^
         </a>
         <a className={s.call}>

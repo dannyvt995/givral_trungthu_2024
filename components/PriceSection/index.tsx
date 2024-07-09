@@ -9,7 +9,7 @@ export default function PriceSection() {
     return (
         <div className='container'>
 
-            <section className={`${s.price_section} margin_each_section`}>
+            <section className={`${s.price_section} margin_each_section`} id="price_section">
                 <div className='tittle_component'>
                     <h2>COMBO TRUNG THU GIVRAL 2024</h2>
                     <p>Dưới đây là bảng giá bánh trung thu givral 2023, mời quý khách hàng tham khảo.</p>
