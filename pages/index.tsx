@@ -14,6 +14,7 @@ import GallerySection from '../components/GallerySection'
 import { ReactLenis } from '@studio-freight/react-lenis'
 import { useEffect, useRef,useState } from 'react'
 import { LenisContext } from '../contexts/LenisContext';
+import FormContact from '../components/FormContact'
 
 
 declare global {
@@ -49,7 +50,8 @@ export default function Home() {
             <IntroSection />
             <ComboSection />
             <PriceSection />
-            <GallerySection />
+           {/*  <GallerySection /> */}
+          <FormContact/>
           </main>
 
           <FooterSection />

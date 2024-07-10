@@ -2,17 +2,30 @@
     position:relative;
     width:100%;
     height:fit-content;
-    
+    padding: 2rem 0;    
 }
 
 .intro_left {
     position:relative;
     width:50%;
+    padding-right:4rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.intro_left h2 {
+    color:var(--red_primary);
+}
+.img {
+    width:80%;
+    margin: 0 auto;
 }
 .intro_right {
     position:relative;
     width:50%;
     overflow:hidden;
+    height:auto;
+    padding: 1rem;
 }
 .intro_full {
     position:relative;
@@ -21,3 +34,64 @@
   
    
 }
+.wrap {
+    display:flex;
+    flex-direction: row;
+}
+.slogan {
+    
+    color:var(--red_primary);
+    font-size:1.7rem;
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom:4rem;
+    padding-top:2rem;
+
+    width: 72%;
+    margin: 0 auto;
+}
+.slogan > span {
+    display:block;
+    width:100%;
+    font-family : "Play";
+    font-style: italic;
+}
+.slogan > span:nth-child(2) {
+    text-align:right;
+
+}
+
+
+@media (max-width: 1200px) {
+   .intro_left {
+        width:72% !important;
+        padding-right: 0 !important;
+      
+   }
+   .intro_left h2 {
+    text-align:center !important;
+   }
+   .intro_right {
+        width:100% !important;
+   }
+   .wrap {
+    flex-direction: column-reverse !important;
+   }
+} 
+
+
+
+@media (max-width: 568px) {
+    .intro_left {
+        width:100% !important;
+        padding:0 1rem !important;
+      
+       }
+    .intro_left h2{
+        font-size:2rem !important;
+    }
+   
+ } 
+ 

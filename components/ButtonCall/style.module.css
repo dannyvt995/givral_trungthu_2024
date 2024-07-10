@@ -4,6 +4,8 @@
     color:var(--red_primary);
     border: 1px solid var(--gray_primary);
     transition: 200ms ;
+    display: block;
+    width: fit-content;
 }
 .button_contact:hover {
     transition: 200ms ;

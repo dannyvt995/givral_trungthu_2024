@@ -27,8 +27,8 @@ export default function NavbarSection() {
                 <li className={s.item}><a onClick={scrollToSection} data-scrollto="price_section">Bánh lẻ</a></li>
                 <li className={s.item}><a onClick={scrollToSection} data-scrollto="combo_section">Combo 2024</a></li>
                 <li className={s.item}><a onClick={scrollToSection} data-scrollto="price_section">Bảng giá</a></li>
-                <li className={s.item}><a onClick={scrollToSection} data-scrollto="album_section">Mẫu hộp</a></li>
-                <li className={s.item}><a onClick={scrollToSection} data-scrollto="footer_section">Liên hệ</a></li>
+                <li className={s.item}><a onClick={scrollToSection} data-scrollto="combo_section">Mẫu hộp</a></li>
+                <li className={s.item}><a onClick={scrollToSection} data-scrollto="form_section">Liên hệ</a></li>
               </ul>
             </nav>
           </div>

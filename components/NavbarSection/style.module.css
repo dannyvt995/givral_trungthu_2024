@@ -51,3 +51,9 @@ ul.menuitem > li:not(:first-child) {
   
     display: block;
 }
+
+@media(max-width:568px) {
+    .item *{
+        font-size:.85rem !important;
+    }
+}

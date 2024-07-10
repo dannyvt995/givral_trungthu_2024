@@ -5,3 +5,7 @@
     overflow:hidden;
     
 }
+
+.slider_hero .swiper-slide{
+    margin-top:0 !important;
+}

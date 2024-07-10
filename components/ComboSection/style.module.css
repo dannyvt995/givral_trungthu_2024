@@ -1,11 +1,24 @@
 .item {
     width:50%;
     position:relative;
+    margin: 1rem;
     padding: 1rem;
-}
 
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.img {
+    margin-top:2rem;
+}
+.typeCombo {
+    margin-top:2rem;
+}
 .image {
-    height:40vh;
+    height:fit-content;
+    aspect-ratio: 1/.7;
     overflow:hidden;
 }
 .button_contact {
@@ -15,8 +28,30 @@
     width: fit-content;
     color:var(--white_primary);
 }
+.name {
+    background: var(--red_primary);
+    color: white;
+    margin-right: 1rem;
+    padding: .5rem 2rem;
+    width: fit-content;
+}
+.detail {
+    
+}
 .item > p {
   /*   max-width:72%; */
+}
+
+.ul_w {
+    list-style-type:circle !important;
+    list-style-position: inside;
+    list-style-image: url(/i_star.svg);
+    padding:0;
+    margin-top:1rem;
+    
+}
+.ul_w li {
+    font-weight:bold;
 }
 @media(max-width: 1024px) {
     .item {
