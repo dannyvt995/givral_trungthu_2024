@@ -40,15 +40,21 @@ export default function Home() {
         <div className={s.container}>
           <Head>
             <title>Trang chủ - Bánh trung thu Givral 2024</title>
-            <meta name="description" content="Đại lý phân phối Bánh trung thu Givral 2024" />
+            <meta name="description" content="Nhà phân phối Bánh trung thu Givral 2024 tại Sài Gòn"  key="desc"/>
             <link rel="icon" href="/logo_givral_mooncake.ico" />
-
-            <meta property="og:title" content="Bánh trung thu Givral 2024"/>
+            <link
+              rel="canonical"
+              href={"https://givral-trungthu-2024.vercel.app/"}
+              key="canonical"
+            />
+            <link rel="icon" type="image/x-icon" href="https://givral-trungthu-2024.vercel.app/logo_givral_mooncake.png"></link>
+            <meta property="og:title" content="Bánh trung thu Givral 2024 tại Sài Gòn"/>
             <meta property="og:description" content="Đại lý phân phối Bánh trung thu Givral 2024"/>
-            <meta property="og:image" content="https://givral-trungthu-2024.vercel.app/logo_givral_mooncake.svg"/>
-            <meta property="og:image:secure_url" content="https://givral-trungthu-2024.vercel.app/logo_givral_mooncake.svg"/>
+            <meta property="og:image" content="https://givral-trungthu-2024.vercel.app/logo_givral_mooncake.png"/>
+            <meta property="og:image:secure_url" content="https://givral-trungthu-2024.vercel.app/logo_givral_mooncake.png"/>
             <meta property="og:url" content="https://givral-trungthu-2024.vercel.app/"/>
             <meta property="og:type" content="website"/>
+    
             
           </Head>
           <NavbarSection />
