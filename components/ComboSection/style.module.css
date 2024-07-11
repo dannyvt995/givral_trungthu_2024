@@ -61,3 +61,8 @@
         flex-wrap:wrap !important;
     }
 }
+@media(max-width:568px) {
+    .name {
+        font-size:1.5rem !important;
+    }
+}

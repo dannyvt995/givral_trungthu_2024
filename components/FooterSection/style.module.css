@@ -2,6 +2,7 @@
     height:50vh;
     background: var(--red_primary);
     padding:5rem 0 0 0;
+    background: url(/menu-pattern.png) #d92027;
 }
 .footer * {
     color:var(--white_primary);

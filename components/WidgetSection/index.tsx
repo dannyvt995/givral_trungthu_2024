@@ -13,7 +13,7 @@ export default function WidgetSection() {
   return (
     <section className={s.widget_section}>
         <div className={s.list_button}>
-            <a className={s.button} href='tel:+934127409' target='_blank'>
+            <a className={s.button} href='tel:0934127409' target='_blank'>
                 <span className={s.icon} >
                     <Image src={'/i_phone_foot.svg'} width={0} height={0} sizes='100%' style={{width:'100%',height:'auto'}} alt="Logo"/>
                 </span>
@@ -29,7 +29,7 @@ export default function WidgetSection() {
         <a className={s.button_scrollToTop} onClick={scrollToTop}>
           ^
         </a>
-        <a className={s.call} href='tel:+934127409'>
+        <a className={s.call} href='tel:0934127409'>
           <IconSVG src='/i_phone_foot.svg' />
          {/*  <Image className={s.call_icon} src={'/i_phone_foot.svg'} width={0} height={0} sizes='100%' style={{width:'100%',height:'auto'}} alt="Logo"/> */}
         </a>

@@ -132,12 +132,20 @@
         display:none!important;
     }
     .zalo {
+        width: 50px !important;
+        height: 50px !important;
         right:calc(var(--padding_container) - .3rem) !important;
         left:unset !important;
     }
     .call {
+        width: 50px !important;
+        height: 50px !important;
         right:calc(var(--padding_container) - .3rem) !important;
         left:unset !important;
-        bottom: 11rem;
+        bottom: 10rem;
+    }
+    .button_scrollToTop {
+        width: 40px !important;
+        height: 40px !important;
     }
 }

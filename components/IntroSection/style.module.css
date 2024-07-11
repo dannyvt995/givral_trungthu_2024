@@ -19,6 +19,7 @@
 .img {
     width:80%;
     margin: 0 auto;
+    position:relative;
 }
 .intro_right {
     position:relative;
@@ -49,7 +50,7 @@
     padding-bottom:4rem;
     padding-top:2rem;
 
-    width: 72%;
+    width: 80%;
     margin: 0 auto;
 }
 .slogan > span {
@@ -63,7 +64,13 @@
 
 }
 
-
+.imgBg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
 @media (max-width: 1200px) {
    .intro_left {
         width:72% !important;
@@ -91,6 +98,9 @@
        }
     .intro_left h2{
         font-size:2rem !important;
+    }
+    .intro_section {
+        padding:0 !important;
     }
    
  } 

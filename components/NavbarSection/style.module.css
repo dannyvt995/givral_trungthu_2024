@@ -37,13 +37,15 @@ ul.menuitem > li:not(:first-child) {
     margin-left:var(--padding_container);
 }
 .item {
-    background:var(--red_primary);
-    color:var(--white_primary);
+    background: url(/menu-pattern.png) #d92027;
+    border-radius: 5px;
+    color: var(--white_primary);
     padding: .36rem 1.36rem;
     margin-bottom: .2rem;
-    border: 1px solid var(--white_primary);
+    border: 1px solid var(--gray_primary);
     width: fit-content;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    user-select: none;
     
 }
 .item * {
@@ -55,5 +57,12 @@ ul.menuitem > li:not(:first-child) {
 @media(max-width:568px) {
     .item *{
         font-size:.85rem !important;
+     
+    }
+    .item {
+        padding: .36rem 1rem !important;
+    }
+    .logo {
+        width:20vw !important;
     }
 }

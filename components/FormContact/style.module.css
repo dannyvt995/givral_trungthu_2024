@@ -82,10 +82,11 @@
 
 @media(max-width:568px) {
     .info_form {
-        max-width:86% !important;
-        font-size:1.6rem!important;
+        max-width: 100% !important;
+        font-size: 1.2rem !important;
+        font-style: italic;
         line-height: 124%;
-        padding-bottom: 1rem!important;
+        padding-bottom: 1rem !important;
     }
     .itemInput {
         padding: 0.1rem !important;
@@ -93,6 +94,10 @@
     .itemInput2 {
         padding: 0 !important;
         height: 20vh!important;
+    }
+    .form {
+        width:90% !important;
+        padding: 0 1.5rem !important;
     }
   
 }

@@ -27,12 +27,12 @@ export default function PriceSection() {
                     </div>
                     <div className='tittle_wrap_2'>
                         <span className='tittle_icd'></span>
-                        <p>Dưới đây là bảng giá bánh trung thu givral 2023, mời quý khách hàng tham khảo.</p>
+                        <p>Dưới đây là bảng giá bánh trung thu givral 2024, mời quý khách hàng tham khảo.</p>
                     </div>
 
     
                    <div className='tittle_wrap_btn'>
-                   <ButtonDowload url='/banner_1.jpg' /* content='Tải File Bảng Giá' */ />
+                   <ButtonDowload url='/Bang_gia_banh_trung_thu_givral_2024--givralbakery1950.com.pdf' /* content='Tải File Bảng Giá' */ />
                    </div>
                 </div>
                 <Tabs  onSelect={scrollToSection} id="table_price">

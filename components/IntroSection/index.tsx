@@ -16,7 +16,9 @@ export default function IntroSection() {
                     <div className={s.intro_left}>
                         <div className={s.img}>
                             <Image src={'/intro_image.jpg'} width={0} height={0} sizes='100%' style={{ width: '100%', height: '100%' }} alt="sdf" />
-{/*                             <Image src={'/intro_image_bg.png'} width={0} height={0} sizes='100%' style={{ width: '100%', height: '100%' }} alt="sdf" /> */}
+                            <div className={s.imgBg}>
+                                <Image src={'/intro_image_bg.png'} width={0} height={0} sizes='100%' style={{ width: '100%', height: '100%' }} alt="sdf" />
+                            </div>
                         </div>
                         <h2>TẾT ĐOÀN VIÊN</h2>
                         <p>“Nét đẹp truyền thống của Tết Trung thu từ bao lâu đã luôn khắc sâu
