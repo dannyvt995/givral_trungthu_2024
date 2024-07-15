@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from "react";
 import s from "./style.module.css";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function FormContact() {
   const [value, setValue] = useState({
     fullName: "",
@@ -12,14 +13,30 @@ export default function FormContact() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch("/api/send-email", {
+
+    const promise = fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(value),
+    }).then((response) => {
+      if (!response.ok) {
+        throw new Error("Có lỗi xày ra, vui lòng thử lại");
+      }
+      return response;
     });
-    if (response.ok) {
+    
+    toast.promise(
+      promise,
+      {
+        pending: 'Đang gửi thông tin...',
+        success: 'Chúng tôi đã nhận được thông tin! 🎉',
+        error: 'Có lỗi xày ra, vui lòng thử lại',
+      }
+    );
+
+    promise.then(() => {
       setValue({
         fullName: "",
         phone: "",
@@ -27,9 +44,9 @@ export default function FormContact() {
         typeService: "",
         content: "",
       });
-    }
-  };
+    });
 
+  };
   return (
     <section className={s.form_contact} id="form_section">
       <div className={s.wrap}>
@@ -39,6 +56,7 @@ export default function FormContact() {
               Đăng ký nhận thông tin nhận chính sách chiết khấu và hỗ trợ tốt
               nhất từ Chúng tôi
             </p>
+            <ToastContainer />
             <form className={s.listInput} onSubmit={(e) => handleSubmit(e)}>
               <div className={s.itemInput}>
                 <input
